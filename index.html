@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NOVA — smart AI-powered gadgets for everyday life." />
+  <title>NOVA — Intelligent gadgets, beautifully simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NOVA home"><span class="brand-mark">✦</span> NOVA</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#why-nova">Why NOVA</a><a href="#journal">Journal</a>
+    </nav>
+    <button class="cart-button" id="cartButton" type="button" aria-label="Shopping cart, 0 items">
+      <span class="cart-icon">◎</span> Cart <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">The future, thoughtfully made</p>
+        <h1 id="hero-title">Gadgets that<br /><em>think</em> with you.</h1>
+        <p class="hero-text">Discover clever tools designed to make your everyday a little lighter, calmer, and more connected.</p>
+        <a class="primary-button" href="#shop">Explore the collection <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Abstract smart gadget illustration">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="device"><span>✦</span><small>NOVA</small></div>
+        <p class="art-caption">INTELLIGENCE<br /><strong>IN MOTION</strong></p>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading"><div><p class="eyebrow">Curated for your world</p><h2 id="shop-title">Meet your new<br />favourite tools.</h2></div><p class="section-note">Good design should feel like<br />a small daily advantage.</p></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="why-section" id="why-nova"><p class="eyebrow">The NOVA standard</p><h2>Useful by design.<br /><em>Human by nature.</em></h2><div class="benefits"><div><span>01</span><h3>Quietly intelligent</h3><p>Technology that works in the background, so you can stay present in the foreground.</p></div><div><span>02</span><h3>Made to last</h3><p>Thoughtful materials and timeless design, built for more than one season.</p></div><div><span>03</span><h3>Easy from day one</h3><p>No steep learning curve. Just intuitive products that meet you where you are.</p></div></div></section>
+    <section class="newsletter" id="journal"><div><p class="eyebrow">A little signal, now and then</p><h2>Get the good stuff.</h2></div><form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button class="primary-button" type="submit">Subscribe <span>→</span></button></form></section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">✦</span> NOVA</a><p>Better tools for a brighter everyday.</p><small>© 2025 NOVA Studio</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
